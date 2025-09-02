@@ -1,18 +1,24 @@
 #include <stdio.h>
-#include <math.h> 
 
 int main() {
-    float a, b, hipotenusa;
+    int numero;
+    int triplo_sucessor, dobro_antecessor, resultado;
 
-    printf("Digite o valor do cateto a: ");
-    scanf("%f", &a);
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
 
-    printf("Digite o valor do cateto b: ");
-    scanf("%f", &b);
+    
+    triplo_sucessor = (3 * numero) + 1;
 
-    hipotenusa = sqrt((a * a) + (b * b));
+    
+    dobro_antecessor = (2 * numero) - 1;
 
-    printf("O valor da hipotenusa e: %.2f\n", hipotenusa);
+    
+    resultado = triplo_sucessor + dobro_antecessor;
+
+    
+    printf("Resultado: %d\n", resultado);
 
     return 0;
 }
